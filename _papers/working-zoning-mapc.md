@@ -2,7 +2,7 @@
 category: working
 order: 2
 title: "Unpacking Housing Supply Constraints: Zoning Regulations and Hidden Barriers"
-url: /assets/papers/zoning-mapc.pdf
+paper_url: /assets/papers/zoning-mapc.pdf
 byline: "June 2026."
 links:
   - name: SSRN
