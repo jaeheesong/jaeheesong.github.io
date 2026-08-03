@@ -2,6 +2,11 @@
    jaeheesong.com
    Type    : Inter throughout
    Palette : ink · paper · pine
+   ------------------------------------------------------------
+   The font is imported below, so this file is self-contained.
+   The <link> tags in _layouts/default.html are now unused and
+   can be deleted whenever convenient (they only slow the page
+   down slightly).
    ============================================================ */
 
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap');
@@ -42,7 +47,7 @@ body {
   padding: 0 1.5rem;
 }
 
-main { padding-top: var(--top-space); }
+main { padding-top: 0; }
 main::after { content: ""; display: block; clear: both; }
 
 /* ─── Links ─────────────────────────────────────────────── */
@@ -220,13 +225,7 @@ em { font-style: italic; }
   * { transition: none !important; animation: none !important; }
 }
 
-/* Space above the name block */
-.bio { padding-top: 6rem; }
-
-/* ...less of it on phones */
-@media (max-width: 40rem) {
-  .bio { padding-top: 2.5rem; }
-}
+/* ─── Collapsible abstract ──────────────────────────────── */
 
 .abstract { margin: 0 0 0.75rem; }
 
@@ -248,4 +247,10 @@ em { font-style: italic; }
 }
 .abstract[open] summary::before { content: "\2013"; }
 .abstract summary:hover { color: var(--ink); }
-.abstract .entry-abstract { margin-top: 0.6rem; }
+.abstract .entry-abstract { margin-top: 0.6rem; margin-bottom: 0; }
+
+/* Space above the name block */
+.bio { padding-top: 6rem; }
+@media (max-width: 40rem) {
+  .bio { padding-top: 2.5rem; }
+}
