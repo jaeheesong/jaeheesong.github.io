@@ -219,3 +219,6 @@ em { font-style: italic; }
 @media (prefers-reduced-motion: reduce) {
   * { transition: none !important; animation: none !important; }
 }
+
+/* Space above the name block */
+.bio { padding-top: 6rem; }
