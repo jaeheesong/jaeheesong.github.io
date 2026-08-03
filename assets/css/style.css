@@ -1,23 +1,26 @@
 /* ============================================================
    jaeheesong.com
+   Type    : Inter throughout
    Palette : ink · paper · pine
-   Type    : Newsreader (display) · IBM Plex Sans (body) · IBM Plex Mono (utility)
    ============================================================ */
 
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap');
+
 :root {
-  --ink:        #14161a;
-  --paper:      #faf9f6;
-  --rule:       #e2e0d8;
-  --muted:      #5e6266;
-  --accent:     #1b4d3e;
+  --ink:    #14161a;
+  --paper:  #faf9f6;
+  --rule:   #e2e0d8;
+  --muted:  #5e6266;
+  --accent: #1b4d3e;
 
-  --display: "Newsreader", Georgia, serif;
-  --body:    "IBM Plex Sans", -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
-  --mono:    "IBM Plex Mono", ui-monospace, "SF Mono", Menlo, monospace;
+  --sans: "Inter", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
 
-  /* Width of the content column. Raise for narrower side margins,
-     lower for easier reading. 45rem was the original. */
+  /* Width of the content column.
+     Larger = narrower side margins. Smaller = easier to read. */
   --measure: 56rem;
+
+  /* Space above your name at the top of the page. */
+  --top-space: 6rem;
 }
 
 *, *::before, *::after { box-sizing: border-box; }
@@ -27,9 +30,9 @@ body {
   margin: 0;
   background: var(--paper);
   color: var(--ink);
-  font-family: var(--body);
+  font-family: var(--sans);
   font-size: 17px;
-  line-height: 1.62;
+  line-height: 1.6;
   -webkit-font-smoothing: antialiased;
 }
 
@@ -39,7 +42,7 @@ body {
   padding: 0 1.5rem;
 }
 
-main { padding-top: 6rem; }
+main { padding-top: var(--top-space); }
 main::after { content: ""; display: block; clear: both; }
 
 /* ─── Links ─────────────────────────────────────────────── */
@@ -53,8 +56,7 @@ a {
 }
 a:hover { text-decoration-color: var(--accent); }
 
-a:focus-visible,
-summary:focus-visible {
+a:focus-visible {
   outline: 2px solid var(--accent);
   outline-offset: 3px;
   border-radius: 2px;
@@ -64,7 +66,7 @@ summary:focus-visible {
   position: absolute; left: -9999px; top: 0;
   background: var(--ink); color: var(--paper);
   padding: 0.6rem 1rem;
-  font-family: var(--mono); font-size: 0.8rem;
+  font-size: 0.85rem;
   z-index: 10;
 }
 .skip:focus { left: 0; }
@@ -77,22 +79,21 @@ summary:focus-visible {
   float: right;
   width: 11.5rem;
   height: auto;
-  margin: 0.4rem 0 1.25rem 2rem;
+  margin: 0.4rem 0 1.25rem 2.25rem;
   border-radius: 2px;
 }
 
 .bio h1 {
-  font-family: var(--display);
-  font-size: 2.4rem;
-  font-weight: 500;
-  letter-spacing: -0.015em;
-  line-height: 1.1;
-  margin: 0 0 0.9rem;
+  font-size: 2.35rem;
+  font-weight: 600;
+  letter-spacing: -0.02em;
+  line-height: 1.12;
+  margin: 0 0 0.85rem;
 }
 
 .role {
   margin: 0 0 0.25rem;
-  font-size: 1rem;
+  font-size: 1.02rem;
   line-height: 1.45;
   color: var(--muted);
 }
@@ -100,32 +101,34 @@ summary:focus-visible {
 .contact {
   display: flex;
   flex-wrap: wrap;
-  gap: 0.3rem 1.15rem;
-  margin: 1.1rem 0 0;
-  font-family: var(--mono);
-  font-size: 0.73rem;
-  letter-spacing: 0.05em;
+  gap: 0.35rem 1.3rem;
+  margin: 1.15rem 0 0;
+  font-size: 0.86rem;
+  font-weight: 500;
 }
 
-.contact a { text-decoration: none; border-bottom: 1px solid var(--rule); padding-bottom: 1px; }
+.contact a {
+  text-decoration: none;
+  border-bottom: 1px solid var(--rule);
+  padding-bottom: 1px;
+}
 .contact a:hover { border-bottom-color: var(--accent); }
 
 /* ─── Section headings ──────────────────────────────────── */
 
 h2 {
-  font-family: var(--mono);
-  font-size: 0.74rem;
-  font-weight: 500;
-  letter-spacing: 0.13em;
+  font-size: 0.8rem;
+  font-weight: 600;
+  letter-spacing: 0.11em;
   text-transform: uppercase;
   color: var(--muted);
-  margin: 3.4rem 0 1.6rem;
-  padding-bottom: 0.55rem;
+  margin: 3.2rem 0 1.5rem;
+  padding-bottom: 0.5rem;
   border-bottom: 1px solid var(--rule);
 }
 
-p { margin: 0 0 1.15rem; }
-strong { font-weight: 500; }
+p { margin: 0 0 1.1rem; }
+strong { font-weight: 600; }
 em { font-style: italic; }
 
 /* ─── Entries ───────────────────────────────────────────── */
@@ -140,10 +143,10 @@ em { font-style: italic; }
 .entry:last-child { margin-bottom: 0; }
 
 .entry-title {
-  font-family: var(--display);
-  font-size: 1.14rem;
-  font-weight: 500;
-  line-height: 1.35;
+  font-size: 1.1rem;
+  font-weight: 600;
+  letter-spacing: -0.008em;
+  line-height: 1.4;
   margin: 0 0 0.3rem;
 }
 .entry-title a { color: var(--ink); text-decoration-color: var(--rule); }
@@ -151,14 +154,14 @@ em { font-style: italic; }
 
 .entry-byline {
   margin: 0 0 0.55rem;
-  font-size: 0.94rem;
+  font-size: 0.92rem;
   line-height: 1.5;
   color: var(--muted);
 }
 
 .entry-abstract {
-  margin: 0 0 0.7rem;
-  font-size: 0.95rem;
+  margin: 0 0 0.75rem;
+  font-size: 0.94rem;
   line-height: 1.6;
   color: #2c3033;
 }
@@ -168,14 +171,16 @@ em { font-style: italic; }
 .entry-links {
   display: flex;
   flex-wrap: wrap;
-  gap: 0.35rem 1.15rem;
+  gap: 0.35rem 1.3rem;
   margin: 0;
-  font-family: var(--mono);
-  font-size: 0.71rem;
-  letter-spacing: 0.09em;
-  text-transform: uppercase;
+  font-size: 0.82rem;
+  font-weight: 500;
 }
-.entry-links a { text-decoration: none; border-bottom: 1px solid var(--rule); padding-bottom: 1px; }
+.entry-links a {
+  text-decoration: none;
+  border-bottom: 1px solid var(--rule);
+  padding-bottom: 1px;
+}
 .entry-links a:hover { border-bottom-color: var(--accent); }
 
 /* ─── Footer ────────────────────────────────────────────── */
@@ -189,10 +194,7 @@ em { font-style: italic; }
   gap: 0.5rem 1.5rem;
   padding-top: 1.4rem;
   padding-bottom: 2.5rem;
-  font-family: var(--mono);
-  font-size: 0.7rem;
-  letter-spacing: 0.08em;
-  text-transform: uppercase;
+  font-size: 0.78rem;
   color: var(--muted);
 }
 
@@ -210,8 +212,8 @@ em { font-style: italic; }
     margin: 0 0 1.4rem;
   }
 
-  .bio h1 { font-size: 2rem; }
-  h2 { margin-top: 2.8rem; }
+  .bio h1 { font-size: 1.95rem; }
+  h2 { margin-top: 2.6rem; }
 }
 
 @media (prefers-reduced-motion: reduce) {
