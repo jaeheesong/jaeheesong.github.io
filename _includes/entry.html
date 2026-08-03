@@ -1,7 +1,7 @@
 {%- assign p = include.item -%}
 <article class="entry">
   <h3 class="entry-title">
-    {%- if p.url -%}<a href="{{ p.url }}">{{ p.title }}</a>{%- else -%}{{ p.title }}{%- endif -%}
+    {%- if p.paper_url -%}<a href="{{ p.paper_url }}">{{ p.title }}</a>{%- else -%}{{ p.title }}{%- endif -%}
   </h3>
 
   {%- if p.byline %}
@@ -9,7 +9,7 @@
   {%- endif %}
 
   {%- if p.content and p.content != "" %}
-  <details class="abstract" open>
+  <details class="abstract">
     <summary>Abstract</summary>
     <div class="entry-abstract">{{ p.content | markdownify }}</div>
   </details>
