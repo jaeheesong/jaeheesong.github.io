@@ -10,8 +10,8 @@ roles:
 # ─── Header links (delete any line to hide that link) ─────────
 email: jaehee.song@colorado.edu
 cv_url: /assets/papers/Song_CV.pdf
-google_scholar: https://scholar.google.com/citations?user=n7hLC0IAAAAJ&hl=en&oi=sra
-github: jaeheesong
+google_scholar:
+github:
 twitter:
 linkedin:
 
