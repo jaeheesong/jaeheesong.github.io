@@ -3,7 +3,7 @@ category: working
 order: 1
 title: "Local Spillovers of Startup Innovation"
 url: /assets/papers/innovation-spillovers.pdf
-byline: "with Walter(https://sites.google.com/view/walterdlima/) and Carlos Hurtado(https://sites.google.com/view/walterdlima/). June 2026."
+byline: "with [Walter D'Lima](https://sites.google.com/view/walterdlima/) and [Carlos Hurtado](https://sites.google.com/view/walterdlima/). June 2026."
 links:
   - name: SSRN
     url: https://papers.ssrn.com/sol3/papers.cfm?abstract_id=6967538
