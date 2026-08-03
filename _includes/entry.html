@@ -9,7 +9,11 @@
   {%- endif %}
 
   {%- if p.content and p.content != "" %}
-  <div class="entry-abstract">{{ p.content | markdownify }}</div>
+  <details class="abstract">
+    <summary>Abstract</summary>
+    <div class="entry-abstract">{{ p.content | markdownify }}</div>
+  </details>
+  {%- endif %}
   {%- endif %}
 
   {%- if p.links %}
