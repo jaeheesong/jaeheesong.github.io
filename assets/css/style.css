@@ -228,3 +228,24 @@ em { font-style: italic; }
   .bio { padding-top: 2.5rem; }
 }
 
+.abstract { margin: 0 0 0.75rem; }
+
+.abstract summary {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.4rem;
+  cursor: pointer;
+  list-style: none;
+  font-size: 0.82rem;
+  font-weight: 500;
+  color: var(--muted);
+}
+.abstract summary::-webkit-details-marker { display: none; }
+.abstract summary::before {
+  content: "+";
+  color: var(--accent);
+  width: 0.7rem;
+}
+.abstract[open] summary::before { content: "\2013"; }
+.abstract summary:hover { color: var(--ink); }
+.abstract .entry-abstract { margin-top: 0.6rem; }
