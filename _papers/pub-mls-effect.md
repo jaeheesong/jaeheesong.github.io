@@ -5,6 +5,10 @@ title: "The Effects of Residential Zoning in U.S. Housing Markets"
 url: https://www.sciencedirect.com/science/article/abs/pii/S009411902500049X
 byline: "*Journal of Urban Economics*, 2025, 149: 103784."
 links:
+  - name: Article
+    url: https://www.sciencedirect.com/science/article/abs/pii/S009411902500049X
+  - name: SSRN
+    url: https://papers.ssrn.com/sol3/papers.cfm?abstract_id=3996483
   - name: Replication Package
     url: https://www.openicpsr.org/openicpsr/project/231447/version/V1/view
 ---
