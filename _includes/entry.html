@@ -1,7 +1,7 @@
 {%- assign p = include.item -%}
 <article class="entry">
   <h3 class="entry-title">
-    {%- if p.url -%}<a href="{{ p.url | relative_url }}">{{ p.title }}</a>{%- else -%}{{ p.title }}{%- endif -%}
+    {%- if p.url -%}<a href="{{ p.url }}">{{ p.title }}</a>{%- else -%}{{ p.title }}{%- endif -%}
   </h3>
 
   {%- if p.byline %}
@@ -17,7 +17,7 @@
 
   {%- if p.links %}
   <p class="entry-links">
-    {%- for l in p.links %}<a href="{{ l.url | relative_url }}">{{ l.name }}</a>{% endfor -%}
+    {%- for l in p.links %}<a href="{{ l.url }}">{{ l.name }}</a>{% endfor -%}
   </p>
   {%- endif %}
 </article>
