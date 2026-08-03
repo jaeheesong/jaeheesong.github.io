@@ -2,7 +2,7 @@
 category: publication
 order: 2
 title: "The Effects of Residential Zoning in U.S. Housing Markets"
-url: https://www.sciencedirect.com/science/article/abs/pii/S009411902500049X
+paper_url: https://www.sciencedirect.com/science/article/abs/pii/S009411902500049X
 byline: "*Journal of Urban Economics*, 2025, 149: 103784."
 links:
   - name: SSRN
