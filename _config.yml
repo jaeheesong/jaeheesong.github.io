@@ -5,13 +5,14 @@ description: >-
 
 # Lines shown under your name, one per line. Add or remove freely.
 roles:
-  - Assistant Professor of Finance and Real Estate, University of Colorado Boulder
+  - Assistant Professor of Finance and Real Estate
+  - Leeds School of Business, University of Colorado Boulder
 
 # ─── Header links (delete any line to hide that link) ─────────
-email: jaehee.song@colorado.edu
+email: your.email@university.edu
 cv_url: /assets/papers/Song_CV.pdf
-google_scholar:
-github:
+google_scholar: https://scholar.google.com/citations?user=YOURID
+github: jaeheesong
 twitter:
 linkedin:
 
