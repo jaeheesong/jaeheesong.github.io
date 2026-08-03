@@ -27,7 +27,7 @@ GitHub the custom domain takes over. Do that only after the site looks right.
 ### Adding a paper
 
 Create any `.md` file in `_papers/`. The text below the front matter is the
-abstract, which sits behind a toggle.
+abstract.
 
 ```markdown
 ---
@@ -39,15 +39,12 @@ byline: "with [Coauthor](https://url). March 2026. R&R, *Econometrica.*"
 links:
   - name: Slides
     url: /assets/papers/myslides.pdf
-media:
-  - name: The Economist
-    url: https://economist.com/...
 ---
 
 Abstract text here.
 ```
 
-`links` and `media` are optional. A section disappears automatically when it
+`links` is optional — use it for slides, preprints, or replication files. A section disappears automatically when it
 has no entries, so delete the example files you do not need.
 
 ## Preview locally (optional)

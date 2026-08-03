@@ -8,27 +8,13 @@
   <p class="entry-byline">{{ p.byline | markdownify | remove: "<p>" | remove: "</p>" }}</p>
   {%- endif %}
 
-  <div class="entry-tools">
-    {%- if p.content and p.content != "" %}
-    <details class="disclose">
-      <summary>{{ p.label | default: "Abstract" }}</summary>
-      <div class="disclose-body">{{ p.content | markdownify }}</div>
-    </details>
-    {%- endif %}
+  {%- if p.content and p.content != "" %}
+  <div class="entry-abstract">{{ p.content | markdownify }}</div>
+  {%- endif %}
 
-    {%- if p.media %}
-    <details class="disclose">
-      <summary>Media</summary>
-      <div class="disclose-body media-list">
-        {%- for m in p.media %}<a href="{{ m.url }}">{{ m.name }}</a>{% unless forloop.last %} · {% endunless %}{% endfor -%}
-      </div>
-    </details>
-    {%- endif %}
-
-    {%- if p.links %}
-    <span class="entry-links">
-      {%- for l in p.links %}<a href="{{ l.url | relative_url }}">{{ l.name }}</a>{% endfor -%}
-    </span>
-    {%- endif %}
-  </div>
+  {%- if p.links %}
+  <p class="entry-links">
+    {%- for l in p.links %}<a href="{{ l.url | relative_url }}">{{ l.name }}</a>{% endfor -%}
+  </p>
+  {%- endif %}
 </article>
