@@ -1,0 +1,88 @@
+---
+layout: default
+---
+
+<header class="bio">
+  <img class="portrait" src="{{ '/assets/img/headshot.jpg' | relative_url }}" alt="{{ site.title }}">
+
+  <h1>{{ site.title }}</h1>
+
+  {%- for r in site.roles %}
+  <p class="role">{{ r }}</p>
+  {%- endfor %}
+
+  <p class="contact">
+    {%- if site.email %}<a href="mailto:{{ site.email }}">{{ site.email }}</a>{% endif -%}
+    {%- if site.cv_url %}<a href="{{ site.cv_url | relative_url }}">CV (PDF)</a>{% endif -%}
+    {%- if site.google_scholar %}<a href="{{ site.google_scholar }}">Google Scholar</a>{% endif -%}
+    {%- if site.github %}<a href="https://github.com/{{ site.github }}">GitHub</a>{% endif -%}
+    {%- if site.twitter %}<a href="https://twitter.com/{{ site.twitter }}">Twitter</a>{% endif -%}
+    {%- if site.linkedin %}<a href="{{ site.linkedin }}">LinkedIn</a>{% endif -%}
+  </p>
+</header>
+
+<!-- ══ ABOUT ══════════════════════════════════════════════════
+     Write your bio here. Two or three short paragraphs is the
+     norm: what you work on, then where you trained and what
+     you did before. Plain HTML <p> tags.
+     ══════════════════════════════════════════════════════════ -->
+
+<h2>About</h2>
+
+<p>
+  I am an economist working on <em>[your fields]</em>. My research
+  studies <em>[the one-sentence version of what you do — the thing you
+  would say if someone asked at a conference]</em>. I have also written on
+  <em>[secondary area]</em>.
+</p>
+
+<p>
+  I received my Ph.D. in economics from <em>[institution]</em> in
+  <em>[year]</em>. Before that, <em>[prior position, if any]</em>.
+</p>
+
+<!-- ══ WORKING PAPERS ═════════════════════════════════════════ -->
+
+{% assign working = site.papers | where: "category", "working" | sort: "order" %}
+{% if working.size > 0 %}
+<h2>Working Papers</h2>
+{% for item in working %}{% include entry.html item=item %}{% endfor %}
+{% endif %}
+
+<!-- ══ PUBLICATIONS ═══════════════════════════════════════════ -->
+
+{% assign published = site.papers | where: "category", "publication" | sort: "order" %}
+{% if published.size > 0 %}
+<h2>Publications</h2>
+{% for item in published %}{% include entry.html item=item %}{% endfor %}
+{% endif %}
+
+<!-- ══ WORK IN PROGRESS ═══════════════════════════════════════ -->
+
+{% assign wip = site.papers | where: "category", "wip" | sort: "order" %}
+{% if wip.size > 0 %}
+<h2>Work in Progress</h2>
+{% for item in wip %}{% include entry.html item=item %}{% endfor %}
+{% endif %}
+
+<!-- ══ RESOURCES ══════════════════════════════════════════════
+     Data, code, crosswalks. Delete the section if you have none —
+     it hides itself automatically when no entries exist.
+     ══════════════════════════════════════════════════════════ -->
+
+{% assign resources = site.papers | where: "category", "resource" | sort: "order" %}
+{% if resources.size > 0 %}
+<h2>Resources</h2>
+{% for item in resources %}{% include entry.html item=item %}{% endfor %}
+{% endif %}
+
+<!-- ══ TEACHING ═══════════════════════════════════════════════
+     Delete this whole block if you do not want a teaching section.
+     ══════════════════════════════════════════════════════════ -->
+
+<h2>Teaching</h2>
+
+<article class="entry">
+  <h3 class="entry-title">Course Title (ECON 000)</h3>
+  <p class="entry-byline"><em>[Institution]</em>, [terms taught]</p>
+</article>

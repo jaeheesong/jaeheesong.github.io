@@ -1,0 +1,43 @@
+# ─── Who you are ──────────────────────────────────────────────
+title: Jaehee Song
+description: >-
+  Jaehee Song is an economist. Research papers, resources, and CV.
+
+# Lines shown under your name, one per line. Add or remove freely.
+roles:
+  - Assistant Professor of Economics, Your University
+  - Faculty Research Fellow, National Bureau of Economic Research
+
+# ─── Header links (delete any line to hide that link) ─────────
+email: your.email@university.edu
+cv_url: /assets/papers/Song_CV.pdf
+google_scholar: https://scholar.google.com/citations?user=YOURID
+github: jaeheesong
+twitter:
+linkedin:
+
+# ─── URLs ─────────────────────────────────────────────────────
+url: "https://jaeheesong.com"
+baseurl: ""
+
+# ─── Build settings ───────────────────────────────────────────
+collections:
+  papers:
+    output: false
+
+defaults:
+  - scope:
+      path: ""
+    values:
+      layout: default
+
+markdown: kramdown
+kramdown:
+  input: GFM
+  hard_wrap: false
+
+exclude:
+  - Gemfile
+  - Gemfile.lock
+  - README.md
+  - vendor
