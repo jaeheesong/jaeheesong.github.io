@@ -222,3 +222,9 @@ em { font-style: italic; }
 
 /* Space above the name block */
 .bio { padding-top: 6rem; }
+
+/* ...less of it on phones */
+@media (max-width: 40rem) {
+  .bio { padding-top: 2.5rem; }
+}
+
