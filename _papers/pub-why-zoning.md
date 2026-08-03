@@ -2,6 +2,7 @@
 category: publication
 order: 1
 title: "Why Zoning is Too Restrictive"
+url: https://papers.ssrn.com/sol3/papers.cfm?abstract_id=4535417
 byline: "with [Jack Favilukis](https://sites.google.com/site/jackfavilukis/home). *Management Science*, Accepted."
 links:
   - name: SSRN
