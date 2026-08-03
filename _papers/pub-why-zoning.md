@@ -2,8 +2,10 @@
 category: publication
 order: 1
 title: "Why Zoning is Too Restrictive"
-url: [https://papers.ssrn.com/sol3/papers.cfm?abstract_id=4535417]
-byline: "with Jack Favilukis(https://sites.google.com/site/jackfavilukis/home). *Management Science*, Accepted."
+byline: "with [Jack Favilukis](https://sites.google.com/site/jackfavilukis/home). *Management Science*, Accepted."
+links:
+  - name: SSRN
+    url: https://papers.ssrn.com/sol3/papers.cfm?abstract_id=4535417
 ---
 
 Zoning regulations lowered aggregate growth by 36 percent (Hsieh and Moretti, 2019). If
