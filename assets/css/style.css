@@ -249,8 +249,13 @@ em { font-style: italic; }
 .abstract summary:hover { color: var(--ink); }
 .abstract .entry-abstract { margin-top: 0.6rem; margin-bottom: 0; }
 
+/* ─── Misc layout ──────────────────────────────── */
+
 /* Space above the name block */
 .bio { padding-top: 6rem; }
 @media (max-width: 40rem) {
   .bio { padding-top: 2.5rem; }
 }
+
+/* About paragraphs — match the abstract text size */
+main > p { font-size: 0.94rem; line-height: 1.6; }
