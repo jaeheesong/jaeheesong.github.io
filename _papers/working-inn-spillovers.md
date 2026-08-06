@@ -1,6 +1,6 @@
 ---
 category: working
-order: 1
+order: 2
 title: "Local Spillovers of Startup Innovation"
 paper_url: /assets/papers/innovation_spillovers.pdf
 byline: "with [Walter D'Lima](https://sites.google.com/view/walterdlima/) and [Carlos Hurtado](https://sites.google.com/view/walterdlima/). June 2026."
