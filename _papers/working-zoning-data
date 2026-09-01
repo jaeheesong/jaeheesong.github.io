@@ -1,0 +1,9 @@
+---
+category: working
+order: 5
+title: "Measuring Minimum Lot Size Regulation from the Housing Stock"
+paper_url: /assets/papers/zoning_data.pdf
+byline: "September 2026."
+---
+
+Zoning datasets rarely combine fine spatial resolution, national coverage, and temporal variation. I construct a national minimum lot size panel by detecting notches in lot-size distributions using tax assessor records for 92 million single-family and small multifamily parcels. I estimate neighborhood-level minimum lot sizes across construction cohorts from 1916 to 2025 and allow multiple minimum lot sizes within the same area and period. The estimates closely reproduce statutory minimums where regulations bind. The parcel-weighted median tract has an estimated minimum of 7,800 square feet. Minimum lot size is positively related to existing density restrictions and a lower multifamily share, but negatively related to broader regulatory stringency. I release the estimates for 76,770 Census tracts and corresponding metropolitan areas.
