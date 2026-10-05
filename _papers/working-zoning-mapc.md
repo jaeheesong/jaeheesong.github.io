@@ -1,6 +1,6 @@
 ---
 category: working
-order: 3
+order: 5
 title: "Unpacking Housing Supply Constraints: Zoning Regulations and Hidden Barriers"
 paper_url: /assets/papers/zoning_mapc.pdf
 byline: "June 2026."
