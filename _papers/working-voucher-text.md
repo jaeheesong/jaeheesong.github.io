@@ -1,6 +1,6 @@
 ---
 category: working
-order: 4
+order: 3
 title: "Discrimination Against Housing Vouchers: Evidence from Online Rental Listings"
 paper_url: /assets/papers/VoucherText.pdf
 byline: "with [Hector Blanco](https://hector-blanco.github.io/). June 2025."
