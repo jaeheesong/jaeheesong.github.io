@@ -3,7 +3,10 @@ category: working
 order: 1
 title: "How In-Kind Transfer Design Shapes Supply Incentives: Evidence from U.S. Housing Vouchers"
 paper_url: /assets/papers/HCVLandlords.pdf
-byline: "with [Hector Blanco](https://hector-blanco.github.io/). August 2026."
+byline: "with [Hector Blanco](https://hector-blanco.github.io/). November 2026."
+links:
+  - name: SSRN
+    url: https://papers.ssrn.com/sol3/papers.cfm?abstract_id=7261300
 ---
 
-Many safety-net programs deliver in-kind benefits through private providers, and program design determines who participates and at what price. We study landlord participation and pricing decisions in the U.S. Housing Choice Voucher program, linking voucher administrative data to national rental listings and to a new panel of the program's rent ceilings. We show that landlords are more likely to participate and to explicitly target voucher holders in high-poverty neighborhoods and that they adjust rents substantially toward the program's rent ceiling between listing and contracting. We estimate a model of landlord behavior and show that these price adjustments sustain participation. Participation is costly, markups below the ceiling offset part of the cost, and concessions above it reveal landlords' willingness to pay for the program's payment guarantee. Reforms paying landlords only where the ceiling binds deliver more voucher leases per dollar than unconditional transfers, and targeted ceiling increases expand neighborhood access most cost-effectively.
+Many safety-net programs deliver in-kind benefits through private providers, and program design determines who participates and at what price. We study landlord participation and pricing decisions in the U.S. Housing Choice Voucher program, linking voucher administrative data to national rental listings and to a new panel of the program's price ceilings. We show that landlords are more likely to participate and to explicitly target voucher holders in high-poverty neighborhoods and that they adjust rents substantially toward the program's ceiling between listing and contract. We estimate a model of landlord participation and pricing. Counterfactuals show that targeting higher price ceilings to low-poverty neighborhoods shifts voucher holders toward them more cost-effectively than uniform increases or sign-up bonuses, while stricter rent review can finance such increases without raising program spending.
