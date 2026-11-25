@@ -1,6 +1,6 @@
 ---
 category: publication
-order: 1
+order: 2
 title: "Why Zoning is Too Restrictive"
 paper_url: https://pubsonline.informs.org/doi/10.1287/mnsc.2025.02844
 byline: "with [Jack Favilukis](https://sites.google.com/site/jackfavilukis/home). *Management Science*, 2026."
