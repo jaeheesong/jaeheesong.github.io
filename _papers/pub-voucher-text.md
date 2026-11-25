@@ -1,9 +1,9 @@
 ---
-category: working
-order: 3
+category: publication
+order: 1
 title: "Discrimination Against Housing Vouchers: Evidence from Online Rental Listings"
 paper_url: /assets/papers/VoucherText.pdf
-byline: "with [Hector Blanco](https://hector-blanco.github.io/). October 2026. *Real Estate Economics, Revise & Resubmit.*"
+byline: "with [Hector Blanco](https://hector-blanco.github.io/). October 2026. *Real Estate Economics, Accepted.*"
 links:
   - name: SSRN
     url: https://papers.ssrn.com/sol3/papers.cfm?abstract_id=5291026
